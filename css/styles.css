@@ -10,6 +10,7 @@
   --background-dark: #2f303a;
   --portfolio-border: #eeeeee;
   --header-border-color: #ececec;
+  --icons-inactive: #afb1b8;
 }
 
 * {
@@ -72,7 +73,7 @@ ul {
 }
 
 .contact-items {
-  gap: 0 50px;
+  gap: 0 30px;
 }
 
 .header a,
@@ -109,6 +110,11 @@ ul {
 .header-item a:hover,
 .header-item a:focus {
   color: var(--theme-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  --color4: currentColor;
 }
 
 /* footer */
@@ -247,6 +253,15 @@ ul {
 .team-position {
   font-size: 16px;
   color: var(--light-grey);
+}
+
+.clients-item {
+  color: var(--icons-inactive);
+}
+
+.clients-icon {
+  --color2: currentColor;
+  --color3: currentColor;
 }
 
 /* PORTFOLIO */
