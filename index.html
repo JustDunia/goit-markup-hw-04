@@ -18,32 +18,32 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-left-side">
-        <a class="logo" href="./index.html"><span class="theme-color">Web</span>Studio</a>
+    <div class="container flex-container">
+      <div class="header-left-side flex-container">
+        <a class="logo link" href="./index.html"><span class="theme-color">Web</span>Studio</a>
         <nav class="nav">
-          <ul class="nav-items">
+          <ul class="nav-items flex-container">
             <li class="header-item nav-item">
-              <a href="./index.html">Agencja</a>
+              <a href="./index.html" class="link nav-link header-link">Agencja</a>
             </li>
             <li class="header-item nav-item">
-              <a href="./portfolio.html">Portfolio</a>
+              <a href="./portfolio.html" class="link nav-link header-link">Portfolio</a>
             </li>
             <li class="header-item nav-item">
-              <a href="#">Kontakt</a>
+              <a href="#" class="link nav-link header-link">Kontakt</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="contact-box">
-        <ul class="contact-items">
+        <ul class="contact-items flex-container">
           <li class="header-item contact-item">
-            <a href="mailto:info@devstudio.com"><svg class="contact-icon" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="link contact-link header-link"><svg class="contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
           </li>
           <li class="header-item contact-item">
-            <a href="tel:+48111111111"><svg class="contact-icon" width="10" height="16">
+            <a href="tel:+48111111111" class="link contact-link header-link"><svg class="contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>+48 111 111 111</a>
           </li>
@@ -52,17 +52,17 @@
     </div>
   </header>
   <main>
-    <section class="heading section">
-      <div class="container">
-        <h1 class="heading-title">
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">
           Efektywne rozwiązania dla waszego biznesu
         </h1>
-        <button class="heading-button" type="button">Zamów usługę</button>
+        <button class="hero-button button" type="button">Zamów usługę</button>
       </div>
     </section>
     <section class="lorem section">
       <div class="container">
-        <ul class="lorem-items">
+        <ul class="lorem-items flex-ul">
           <li class="lorem-item">
             <div class="lorem-icon-box">
               <svg class="icon" width="70" height="70">
@@ -117,7 +117,7 @@
     <section class="aboutus section">
       <div class="container">
         <h2 class="section-title">Czym się zajmujemy</h2>
-        <ul class="aboutus-items">
+        <ul class="aboutus-items flex-ul">
           <li class="aboutus-item">
             <img width="370" height="294" src="./images/img-1.jpg" alt="programista piszący kod na tablecie" />
           </li>
@@ -135,7 +135,7 @@
     <section class="team section">
       <div class="container">
         <h2 class="section-title">Nasz zespół</h2>
-        <ul class="team-items">
+        <ul class="team-items flex-ul">
           <li class="team-item">
             <figure class="team-figure">
               <img class="team-img" width="270" height="260" src="./images/team-1.jpg"
@@ -301,7 +301,7 @@
     <section class="clients section">
       <div class="container">
         <h2 class="section-title">Nasi klienci</h2>
-        <ul class="clients-list">
+        <ul class="clients-list flex-container">
           <li>
             <a href="#" class="clients-icon">
               <svg class="clients-icon-svg" width="106" height="60.04">
@@ -349,16 +349,16 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
       <div class="footer-contact-box">
-        <a class="logo" href="./index.html"><span class="theme-color">Web</span>Studio</a>
+        <a class="logo link" href="./index.html"><span class="theme-color">Web</span>Studio</a>
         <address class="address">
           <p class="address-loc">m. Warszawa, Aleje Jerozolimskie 21</p>
           <p>
-            <a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="address-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </p>
           <p>
-            <a class="address-contact" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="address-contact link" href="tel:+48111111111">+48 111 111 111</a>
           </p>
         </address>
       </div>
