@@ -11,6 +11,8 @@
   --portfolio-border: #eeeeee;
   --header-border-color: #ececec;
   --icons-inactive: #afb1b8;
+  --footer-social-icon-bg: rgba(255, 255, 255, 0.1);
+  --border-radius: 4px;
 }
 
 * {
@@ -46,6 +48,32 @@ ul {
   display: flex;
   gap: 30px;
 }
+
+/* social icons */
+
+.social-icon-svg {
+  --color3: currentColor;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: block;
+  padding: 12px;
+  font-size: 0;
+  border-radius: 50%;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--theme-color);
+  color: var(--white);
+}
+
+
 
 /* header */
 
@@ -113,6 +141,7 @@ ul {
 }
 
 .contact-icon {
+  vertical-align: middle;
   margin-right: 10px;
   --color4: currentColor;
 }
@@ -125,6 +154,8 @@ ul {
 
 .footer .container {
   padding: 60px 15px;
+  display: flex;
+  gap: 70px;
 }
 
 .footer .logo {
@@ -152,6 +183,22 @@ ul {
 .address-contact:hover,
 .address-contact:focus {
   color: var(--theme-color);
+}
+
+.footer-joinus-box {
+  padding-top: 12px;
+}
+
+.footer-joinus-heading {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.footer-social-icon {
+  background-color: var(--footer-social-icon-bg);
+  color: var(--white);
 }
 
 /* AGENCJA */
@@ -191,7 +238,7 @@ ul {
 .heading-button {
   padding: 10px 41px;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -207,6 +254,13 @@ ul {
 .lorem {
   padding-bottom: 0;
   background-color: var(--white);
+}
+
+.lorem-icon-box {
+  padding: 25px 102.34px;
+  margin-bottom: 30px;
+  background-color: var(--background-grey);
+  border-radius: var(--border-radius);
 }
 
 .lorem-title {
@@ -255,13 +309,39 @@ ul {
   color: var(--light-grey);
 }
 
-.clients-item {
+.team-social-icons {
+  margin-top: 16px;
+  padding: 0 32px;
+}
+
+.team-social-icon {
   color: var(--icons-inactive);
 }
 
-.clients-icon {
+/* clients section */
+
+.clients-icon-svg {
   --color2: currentColor;
   --color3: currentColor;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-icon {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid var(--icons-inactive);
+  border-radius: var(--border-radius);
+  color: var(--icons-inactive);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
 }
 
 /* PORTFOLIO */
@@ -280,7 +360,7 @@ ul {
 .filter-btn {
   padding: 6px 22px;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.625;

@@ -24,9 +24,7 @@
     <header class="header">
       <div class="container">
         <div class="header-left-side">
-          <a class="logo" href="./index.html"
-            ><span class="theme-color">Web</span>Studio</a
-          >
+          <a class="logo" href="./index.html"><span class="theme-color">Web</span>Studio</a>
           <nav class="nav">
             <ul class="nav-items">
               <li class="header-item nav-item">
@@ -44,10 +42,14 @@
         <div class="contact-box">
           <ul class="contact-items">
             <li class="header-item contact-item">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com"><svg class="contact-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
             </li>
             <li class="header-item contact-item">
-              <a href="tel:+48111111111">+48 111 111 111</a>
+              <a href="tel:+48111111111"><svg class="contact-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>+48 111 111 111</a>
             </li>
           </ul>
         </div>
@@ -217,22 +219,51 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html"
-          ><span class="theme-color">Web</span>Studio</a
-        >
-        <address class="address">
-          <p class="address-loc">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <p>
-            <a class="address-contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </p>
-          <p>
-            <a class="address-contact" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </p>
-        </address>
+        <div class="footer-contact-box">
+          <a class="logo" href="./index.html"><span class="theme-color">Web</span>Studio</a>
+          <address class="address">
+            <p class="address-loc">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <p>
+              <a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </p>
+            <p>
+              <a class="address-contact" href="tel:+48111111111">+48 111 111 111</a>
+            </p>
+          </address>
+        </div>
+        <div class="footer-joinus-box">
+          <h3 class="footer-joinus-heading">Dołącz do nas</h3>
+          <ul class="footer-social-icons social-icons">
+            <li>
+              <a href="#" class="footer-social-icon social-icon">
+                <svg class="social-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-icon social-icon">
+                <svg class="social-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-icon social-icon">
+                <svg class="social-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-icon social-icon">
+                <svg class="social-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
